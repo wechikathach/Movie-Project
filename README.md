@@ -30,15 +30,11 @@ where length <=50
 LIMIT 10
 ```
 RESULT:
+
 <img width="285" alt="Screen Shot 2022-07-30 at 3 34 45 PM" src="https://user-images.githubusercontent.com/110305874/182002365-9ce75653-7e60-461e-a774-d35f3bca4686.png">
 
 
-3. HOW MANY FILMS HAVE A RATING OF R & A REPLACEMENT COST BETWEEN $5 AND $15? 
-Select count(*) from film
-where rating='R' and replacement_cost between '5' and '15'
-
-
-4. A customer would like to know what is the average they will spend to replace a movie for each rating. What is the Average replacement cost per MPAA rating? 
+4. A customer would like to know what is the average they will spend to replace a movie for each rating. What is the average replacement cost per MPAA rating? 
 INPUT:
 
 ```sql -- Add 3 backticks followed by sql
@@ -51,7 +47,7 @@ RESULT:
 <img width="231" alt="Screen Shot 2022-07-31 at 3 23 55 PM" src="https://user-images.githubusercontent.com/110305874/182047688-2711f8ec-7ca5-4971-b452-0caf52004f4c.png">
 
 
-5. What are the customer ids of the top 5 customers by total spend? 
+5. What are the customer ID's of the top 5 customers by total spend? 
 INPUT:
 
 ```sql -- Add 3 backticks followed by sql
@@ -64,8 +60,11 @@ LIMIT 5
 
 RESULT:
 
+<img width="224" alt="Screen Shot 2022-07-31 at 4 44 32 PM" src="https://user-images.githubusercontent.com/110305874/182050273-38a860a3-dc51-4440-9374-c80ee50fd4ce.png">
+
 
 6. What customer ID are eligible for platinum status? We are launching a platinum service for our most loyal customers. We will assign platinum status to customer that have 40 or more transactions available? 
+
 INPUT:
 
 ```sql -- Add 3 backticks followed by sql
@@ -92,7 +91,10 @@ LIMIT 1;
 ```
 RESULT:
 
-8. A customer walks in and is a huge fan of the actor “Nick Wahlberg” and wants to know which movie he is in. What are all the movies Nick Wahlberg is in? 
+<img width="300" alt="Screen Shot 2022-07-31 at 4 51 58 PM" src="https://user-images.githubusercontent.com/110305874/182050576-113547cf-89fa-4b85-9f29-843b6544a1e4.png">
+
+
+8. A customer walks in and is a huge fan of the actor “Nick Wahlberg”. They want to know which movies he is in. What are all the movies Nick Wahlberg is in? 
 
 INPUT:
 
@@ -105,8 +107,10 @@ ON film_actor.film_id = film.film_id
 WHERE first_name = ‘Nick’
 AND last_name = ‘Wahlberg’
 ```
+
 RESULT:
 
+<img width="449" alt="Screen Shot 2022-07-31 at 4 50 44 PM" src="https://user-images.githubusercontent.com/110305874/182050539-96eedac9-49cf-4174-ba67-181df77ee626.png">
 
 
 
