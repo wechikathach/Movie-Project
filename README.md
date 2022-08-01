@@ -1,7 +1,7 @@
 # Blockbuster movie rental data🎥
 
   
-In this notebook, we are going to analyze movie data collected by a movie rental business called Blockbuster. The dataset contains information about the amounts, titles, ratings, and customers. 
+In this notebook, we are going to analyze movie data collected by a movie rental business called Blockbuster. The dataset contains information about the amounts, titles, ratings, payments, and customers. 
 
 
 
@@ -20,7 +20,7 @@ RESULT:
 
 
 
-2. A Customer wants to watch 10 movies that is 50 minutes or less. What movies would that be? 
+2. A customer wants to watch 10 movies that are 50 minutes or less. What movies would that be? 
 
 INPUT:
 
@@ -47,7 +47,8 @@ RESULT:
 <img width="231" alt="Screen Shot 2022-07-31 at 3 23 55 PM" src="https://user-images.githubusercontent.com/110305874/182047688-2711f8ec-7ca5-4971-b452-0caf52004f4c.png">
 
 
-5. What are the customer ID's of the top 5 customers by total spend? 
+5. The compnay would like to see which customers have spent the most. What are the customer ID's of the top 5 customers by total spend? 
+
 INPUT:
 
 ```sql -- Add 3 backticks followed by sql
@@ -63,7 +64,7 @@ RESULT:
 <img width="224" alt="Screen Shot 2022-07-31 at 4 44 32 PM" src="https://user-images.githubusercontent.com/110305874/182050273-38a860a3-dc51-4440-9374-c80ee50fd4ce.png">
 
 
-6. What customer ID are eligible for platinum status? We are launching a platinum service for our most loyal customers. We will assign platinum status to customer that have 40 or more transactions available? 
+6. The company is launching a platinum service for our most loyal customers. We will assign platinum status to customers that have 40 or more transactions available. What customers are eligible for platinum status?
 
 INPUT:
 
