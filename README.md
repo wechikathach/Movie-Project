@@ -114,6 +114,9 @@ RESULT:
 <img width="449" alt="Screen Shot 2022-07-31 at 4 50 44 PM" src="https://user-images.githubusercontent.com/110305874/182050539-96eedac9-49cf-4174-ba67-181df77ee626.png">
 
 9. A customer would like to see a list of actors in each movie and Category. 
+INPUT: 
+
+```sql -- Add 3 backticks followed by sql
 SELECT
 title movie,
 name category,
@@ -128,8 +131,9 @@ ON film.film_id = film_category.film_id
 INNER JOIN category
 ON category.category_id = film_category.category_id
 GROUP BY title,name
-
+```
 RESULT: 
+
 <img width="428" alt="Screen Shot 2023-05-09 at 8 01 16 PM" src="https://github.com/wechikathach/Movie-Project/assets/110305874/d7a8c842-86fa-41c7-98db-4fda87d4bc3b">
 
 
