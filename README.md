@@ -113,5 +113,24 @@ RESULT:
 
 <img width="449" alt="Screen Shot 2022-07-31 at 4 50 44 PM" src="https://user-images.githubusercontent.com/110305874/182050539-96eedac9-49cf-4174-ba67-181df77ee626.png">
 
+9. A customer would like to see a list of actors in each movie and Category. 
+SELECT
+title movie,
+name category,
+STRING_AGG( first_name || ' ' || last_name, ', ') actors
+FROM actor
+INNER JOIN film_actor
+ON actor.actor_id = film_actor.actor_id
+INNER JOIN film
+ON film.film_id = film_actor.film_id
+INNER JOIN film_category
+ON film.film_id = film_category.film_id
+INNER JOIN category
+ON category.category_id = film_category.category_id
+GROUP BY title,name
+
+RESULT: 
+<img width="428" alt="Screen Shot 2023-05-09 at 8 01 16 PM" src="https://github.com/wechikathach/Movie-Project/assets/110305874/d7a8c842-86fa-41c7-98db-4fda87d4bc3b">
+
 
 
